@@ -1,12 +1,24 @@
 package br.com.senac.mybike;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder>{
+import java.util.List;
+
+public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder> {
+
+    Context context;
+    List<Bike> lstBikes;
+
+    //Criando o construtor da classe adaptadora alt+insert
+    public MyAdapterBike(Context context, List<Bike> lstBikes) {
+        this.context = context;
+        this.lstBikes = lstBikes;
+    }
 
     @NonNull
     @Override
@@ -24,7 +36,7 @@ public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder
         return 0;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

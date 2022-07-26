@@ -42,7 +42,7 @@ public class CatalogosActivity extends AppCompatActivity {
 
         //Instanciar a classe adaptadora
 
-        MyAdapterBike adapterBike = new MyAdapterBike();
+        MyAdapterBike adapterBike = new MyAdapterBike(getApplicationContext(),listabikes);
 
         //Definir o tipo de gerenciador de layout
 
