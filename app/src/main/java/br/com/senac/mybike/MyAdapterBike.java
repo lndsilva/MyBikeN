@@ -11,7 +11,6 @@ import java.util.List;
 
 public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder> {
 
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
