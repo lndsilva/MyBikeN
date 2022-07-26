@@ -11,14 +11,6 @@ import java.util.List;
 
 public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder> {
 
-    Context context;
-    List<Bike> lstBikes;
-
-    //Criando o construtor da classe adaptadora alt+insert
-    public MyAdapterBike(Context context, List<Bike> lstBikes) {
-        this.context = context;
-        this.lstBikes = lstBikes;
-    }
 
     @NonNull
     @Override

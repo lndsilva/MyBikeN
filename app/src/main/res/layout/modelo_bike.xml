@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txtTituloBike"
+            android:id="@+id/txtModeloTituloBike"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -26,7 +26,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imgBike"
+            android:id="@+id/imgModeloBike"
             android:layout_width="190dp"
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
@@ -50,7 +50,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtPrecoBike"
+                android:id="@+id/txtModeloPrecoBike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2sp"
@@ -70,7 +70,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtDisponivelBike"
+                android:id="@+id/txtModeloDisponivelBike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2sp"
@@ -81,7 +81,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/txtComprarBike"
+            android:id="@+id/txtModeloComprarBike"
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
