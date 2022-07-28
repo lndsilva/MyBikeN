@@ -4,13 +4,13 @@ public class Bike {
     //atributos globais
     private String titulo;
     private String preco;
-    private int disponivel;
+    private String disponivel;
     private int imagemBike;
 
     public Bike() {
     }
 
-    public Bike(String titulo, String preco, int disponivel, int imagemBike) {
+    public Bike(String titulo, String preco, String disponivel, int imagemBike) {
         this.titulo = titulo;
         this.preco = preco;
         this.disponivel = disponivel;
@@ -33,11 +33,11 @@ public class Bike {
         this.preco = preco;
     }
 
-    public int getDisponivel() {
+    public String getDisponivel() {
         return disponivel;
     }
 
-    public void setDisponivel(int disponivel) {
+    public void setDisponivel(String disponivel) {
         this.disponivel = disponivel;
     }
 
