@@ -1,9 +1,12 @@
 package br.com.senac.mybike;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,7 +33,7 @@ public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder
         View view;
 
         LayoutInflater inflater = LayoutInflater.from(context);
-        view = inflater.inflate(R.layout.modelo_bike,null);
+        view = inflater.inflate(R.layout.modelo_bike, null);
 
         //Instanciar a classe ViewHolder
         ViewHolder holder = new ViewHolder(view);
@@ -39,13 +42,31 @@ public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         //Inserir os valores nos componentes do modelo.
         holder.txtTitulo.setText(lstBike.get(position).getTitulo());
         holder.txtPreco.setText(lstBike.get(position).getPreco());
         holder.txtDisp.setText(lstBike.get(position).getDisponivel());
 
         holder.imgBike.setImageResource(lstBike.get(position).getImagemBike());
+
+        //clique no objeto apos o carregamento
+        holder.txtBotao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Passando valores de uma janela para outra
+                Intent intent = new Intent(context, MostrarBikeActivity.class);
+
+                intent.putExtra("titulo", lstBike.get(position).getTitulo());
+                intent.putExtra("preco", lstBike.get(position).getPreco());
+                intent.putExtra("disponivel", lstBike.get(position).getDisponivel());
+                intent.putExtra("imagem", lstBike.get(position).getImagemBike());
+
+                //abrindo a janela
+                context.startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+
+            }
+        });
 
 
     }
@@ -71,6 +92,8 @@ public class MyAdapterBike extends RecyclerView.Adapter<MyAdapterBike.ViewHolder
             txtDisp = itemView.findViewById(R.id.txtModeloDisponivelBike);
 
             imgBike = itemView.findViewById(R.id.imgModeloBike);
+
+            txtBotao = itemView.findViewById(R.id.txtModeloComprarBike);
 
 
         }
