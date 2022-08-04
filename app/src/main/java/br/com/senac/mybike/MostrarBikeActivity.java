@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MostrarBikeActivity extends AppCompatActivity {
     TextView txtMostrarTitulo, txtMostrarPreco, txtMostrarDisp;
@@ -36,7 +38,7 @@ public class MostrarBikeActivity extends AppCompatActivity {
         preco = intent.getExtras().getString("preco");
         disponivel = intent.getExtras().getString("disponivel");
 
-        imagem = intent.getIntExtra("imagem",0);
+        imagem = intent.getIntExtra("imagem", 0);
 
         //Inserindo os valores nos campos da janela
 
@@ -46,8 +48,14 @@ public class MostrarBikeActivity extends AppCompatActivity {
 
         imgMostrarImagem.setImageResource(imagem);
 
-
-
+        btnMostrarComprar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                        "Compra realizada com sucesso!!!",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }
