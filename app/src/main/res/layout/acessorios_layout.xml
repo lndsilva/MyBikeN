@@ -7,6 +7,13 @@
     tools:context=".AcessoriosActivity">
 
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAcessorios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add"
+        app:layout_anchor="@id/bottomBarAcessorios" />
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomBarAcessorios"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
