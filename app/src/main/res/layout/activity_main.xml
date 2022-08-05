@@ -8,11 +8,23 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:background="@drawable/botao"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
-        android:hint="Username"/>
+        android:background="@drawable/botao"
+        android:drawableRight="@drawable/ic_baseline_person"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/botao"
+        android:drawableRight="@drawable/ic_baseline_lock"
+        android:hint="Password"
+        android:inputType="textPassword" />
 
 </LinearLayout>
