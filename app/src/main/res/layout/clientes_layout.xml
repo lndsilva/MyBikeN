@@ -8,8 +8,9 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navClientes"
-        app:menu="@menu/menu_bottombar"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header_layout_drawer"
+        app:menu="@menu/menu_nav" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

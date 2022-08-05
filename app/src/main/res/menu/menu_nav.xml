@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/gClientes"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/mInbox"
+            android:checked="true"
+            android:icon="@drawable/ic_baseline_inbox"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/mOutbox"
+            android:icon="@drawable/ic_baseline_send"
+            android:title="Outbox" />
+        <item
+            android:id="@+id/mFavorite"
+            android:icon="@drawable/ic_baseline_favorite"
+            android:title="Favorite" />
+
+        <item
+            android:id="@+id/mArchive"
+            android:icon="@drawable/ic_baseline_archive"
+            android:title="Archive" />
+        <item
+            android:id="@+id/mTrash"
+            android:icon="@drawable/ic_baseline_restore_from_trash"
+            android:title="Trash" />
+        <item
+            android:id="@+id/mSpam"
+            android:icon="@drawable/ic_baseline_send"
+            android:title="Trash" />
+
+    </group>
+    <group
+        android:id="@+id/g"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/mPreferencias"
+            android:title="Preferências">
+            <menu>
+                <item
+                    android:id="@+id/mRecents"
+                    android:icon="@drawable/ic_baseline_inbox"
+                    android:title="Recents" />
+                <item
+                    android:id="@+id/mOffLine"
+                    android:icon="@drawable/ic_baseline_send"
+                    android:title="Offiline" />
+                <item
+                    android:id="@+id/mUploads"
+                    android:icon="@drawable/ic_baseline_favorite"
+                    android:title="Uploads" />
+
+                <item
+                    android:id="@+id/mBackups"
+                    android:icon="@drawable/ic_baseline_archive"
+                    android:title="Backups" />
+            </menu>
+        </item>
+
+
+    </group>
+
+</menu>
