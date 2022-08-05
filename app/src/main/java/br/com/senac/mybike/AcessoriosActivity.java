@@ -9,10 +9,12 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class AcessoriosActivity extends AppCompatActivity {
     //Criando as variáveis globais
     BottomAppBar bottomAppBar;
+    FloatingActionButton fabCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,18 @@ public class AcessoriosActivity extends AppCompatActivity {
 
         //apresentando o xml para o java
         bottomAppBar = findViewById(R.id.bottomBarAcessorios);
+        fabCadastrar = findViewById(R.id.fabAcessorios);
+
+        //Criando o clique no FAB
+        fabCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                        "Cliquei no FAB",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         //criando o clique no navigationicon
         bottomAppBar.setNavigationOnClickListener(new View.OnClickListener() {
