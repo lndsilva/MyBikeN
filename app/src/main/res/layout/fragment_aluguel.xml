@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4511E"
-    tools:context=".ClientesFragment">
+    android:background="#8E24AA"
+    tools:context=".AluguelFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center_vertical"
-        android:text="Clientes"
+        android:text="Aluguel"
         android:textColor="#FFF"
         android:textSize="30sp"
         android:textStyle="bold" />
-
+1
 </FrameLayout>
