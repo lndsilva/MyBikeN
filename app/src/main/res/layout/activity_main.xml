@@ -35,7 +35,7 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/botao"
         android:inputType="number"
-        app:mask="+55 (__) ___ __ __"
+        app:mask="(__) _____-____"
         app:maskCharacter="_"
         app:maskStyle="completable"
         tools:ignore="SpeakableTextPresentCheck" />
