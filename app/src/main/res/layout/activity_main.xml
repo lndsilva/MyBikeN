@@ -27,4 +27,20 @@
         android:hint="Password"
         android:inputType="textPassword" />
 
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/botao"
+        android:inputType="number"
+        app:mask="+55 (__) ___ __ __"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
 </LinearLayout>
